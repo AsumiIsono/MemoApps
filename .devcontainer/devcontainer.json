@@ -8,12 +8,12 @@
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "esbenp.prettier-vscode"
-            ]
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
         }
     },
-    "postCreateCommand": "pip install flask",
-    "forwardPorts": [5000],
-    "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-    }
+    "postCreateCommand": "apt-get update && apt-get install -y azure-cli && pip install flask",
+    "forwardPorts": [5000]
 }
